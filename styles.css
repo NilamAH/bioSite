@@ -25,33 +25,31 @@
     font-family: 'Montserrat', sans-serif;
  }
 
- nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background: var(--secondary-color);
-    margin: 0;
+ nav#navbar {
+    overflow: hidden;
+	background-color: var(--secondary-color);
+	border-bottom: 15px solid var(--accent-color);
  }
 
- nav ul li {
-    display: inline;
+ nav#navbar a {
+    float: left;
+	display: inline-block;
+	color: var(--background-color);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
  }
 
- nav ul li a {
-    text-decoration: none;
+ nav#navbar a:hover {
+    background-color: var(--accent-color);
     color: var(--background-color );
-    padding: 10px 20px;
-    display: inline-block;
  }
 
- nav ul li a:hover {
-    background: var(--accent-color);
-    color: var(--background-color);
- }
-
- main {
-    padding: 20px;
-    margin: 10px;
+ main#container {
+    margin-top: 2%;
+	margin-left:5%;
+	margin-right: 5%;
+	padding: 10px;
  }
 
  footer {
@@ -61,9 +59,28 @@
     padding: 10px 0;
     position: fixed;
     width: 100%;
+	height: 5%;
     bottom: 0;
  }
-
+  
+  footer p {
+	  color: var(--background-color);
+	  font-weight: 400;
+	  float: right;
+	  padding-right: 10px;
+	  font-style: italic;
+  }
+ 
+  footer a {
+	  color:var(--background-color);
+	  text-decoration: none;
+  }
+  
+  footer a:hover {
+	  text-decoration: underline;
+  }
+  
+  
  /* Typography */
  h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -114,6 +131,6 @@ input[type="submit"] {
 
 /* Images */
 img {
-    max-width: 1000px;
+    max-width: 200px;
     width: 100%;
 }
